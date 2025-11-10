@@ -1,16 +1,10 @@
-# This is a sample Python script.
+from colorama import init, Fore, Back, Style
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Inirialize colorama for cross-platform colored terminal output
+init()
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Print colored Hello Word
+print(f"{Fore.RED}{Back.YELLOW}Hello Word!{Style.RESET_ALL}")
+print(f"{Fore.GREEN}Hello Word in Green!{Style.RESET_ALL}")
+print(f"{Fore.BLUE}{Style.BRIGHT}Hello Word is Bright Blue!{Style.RESET_ALL}")
+print(f"{Fore.MAGENTA}{Back.CYAN}Hello Word with Magenta text and Cyan background!{Style.RESET_ALL}")
