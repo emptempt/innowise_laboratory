@@ -1,0 +1,2 @@
+colorama==0.4.6
+-e git+https://github.com/emptempt/innowise_laboratory.git@beca72e60d8dce695292a242fe3c5d9cbf521540#egg=innowise_laboratory&subdirectory=lecture_1
