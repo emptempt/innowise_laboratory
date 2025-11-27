@@ -107,7 +107,10 @@ while True:
                     grade = 'N/A'
                 finally:
                     # Display student's average
-                    print(f"{k}'s average grade is {grade:.2f}")
+                    if grade == 'N/A':
+                        print(f"{k}'s average grade is {grade}")
+                    else:
+                        print(f"{k}'s average grade is {grade:.2f}")
         print('-------------------------')
 
         # Display statistics
